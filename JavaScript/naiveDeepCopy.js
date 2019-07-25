@@ -1,7 +1,8 @@
 /* 
 Accepts: anything
 Returns: the input value if not an object, or a naive deep clone of an array or object.
-Does not preserve prototypal inheritance or reference pointers; assumes a tree.
+Does not preserve prototypal inheritance or reference pointers; 
+multiple references to the same value will become multiple unrelated new copies.
 */
 
 const naiveDeepCopy = (input) => {
